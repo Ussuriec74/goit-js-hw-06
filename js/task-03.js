@@ -15,7 +15,7 @@ const images = [
 ];
 
 const markup = images
-  .map((image) => `<li class = "gallery__item"><img class = "gallery__img" src = ${image.url} alt = ${image.alt} width = "100% / 3 - 80px"></li>`)
+  .map((image) => `<li class = "gallery__item"><img class = "gallery__img" src = ${image.url} alt = "${image.alt}" width = "100% / 3 - 80px"></li>`)
   .join('');
 
 galleryListRef.insertAdjacentHTML('afterbegin', markup);
